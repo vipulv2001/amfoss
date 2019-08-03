@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int a[3],b[3],apoint=0,bpoint=0;
+cout<<"Enter the values for A \n "; //giving the values for a
+cin>>a[0]>>a[1]>>a[2];
+cout<<"Enter the values for B \n "; //giving the values for b
+cin>>b[0]>>b[1]>>b[2];
+for(int i=0;i<3;i++)
+{
+	if(a[i]>b[i]) //checking a is greater than b
+	apoint++;
+else 	if(b[i]>a[i]) //checking b is greater than a
+	bpoint++;
+else
+{
+	apoint=apoint+0;  //if a and b are equal then neither gets a point
+	bpoint=bpoint+0;
+}
+}
+	cout<<apoint<<" "<<bpoint; //displaying the points
+return 0;
+getch();
+}
