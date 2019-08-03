@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+clrscr();
+int n,c,r,s=1;
+cout<<"Enter the base and of pattern\n"; //giving value for base and height=n
+cin>>n;
+r=n-1;
+	for(int i=0;i<n;i++)
+{
+	for(int j=0;j<r;j++)
+	cout<<" ";
+	for(int k=0;k<s;k++)
+{
+	cout<<"#";
+}
+	cout<<endl;
+	s++;
+	r--;
+}
+getch();
+return 0;
+}
